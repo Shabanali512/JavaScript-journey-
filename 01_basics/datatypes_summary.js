@@ -38,3 +38,40 @@ const myFunction = function(){
 
 }
 
+
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//  there 2 types of memory 
+// stack (Jaha pe primitive datatype h waha pr stack use hoti h ) and 
+// Heap  (Jaha pr non-primitive h datatype waha pr Heap use goti h ) 
+
+let myYoutubeName = "Shaban_Ali"
+
+let AnotherNmae = myYoutubeName 
+
+ AnotherNmae = " Ali_Shaban" 
+
+console.log(myYoutubeName);
+console.log(AnotherNmae);
+
+let UserOne = {
+
+    email : "shaban@gmaail.com",
+
+}
+
+let UserTwo = UserOne 
+
+console.log(UserTwo)
+
+console.log("After Chnage")
+
+UserTwo.email = "Shaban@google.com"
+
+console.log(UserOne);
+console.log(UserTwo);
+
+
