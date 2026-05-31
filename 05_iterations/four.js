@@ -15,7 +15,7 @@ const programing = ["js" , "py" , "cpp" , "java"]
 
 for(const key in programing){
 
-    console.log(programing[key]);
+    // console.log(programing[key]);
     
 }
 
@@ -32,3 +32,45 @@ for(const key in programing){
 
 // map is not iterateable in For in loop  
 
+const coding = ["js", "py" , "cpp" , "rb"] 
+
+coding.forEach(function (items){
+
+        console.log(items)
+
+}) 
+
+coding.forEach((item) => {
+
+    console.log(item);
+    
+
+}) 
+
+coding.forEach( (item , index , arr) => {
+
+    console.log(item , index , arr)
+
+
+})
+
+
+
+const MyObject = [
+
+        {
+            languageName : "javascript",
+            languagefileName : "js"
+        }, 
+             {
+            languageName1 : "javascript",
+            languagefileName1 : "js"
+        }
+] 
+
+MyObject.forEach((item) => {
+
+    console.log(item.languagefileName);
+    
+
+})
