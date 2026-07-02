@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in JavaScript</title>
+</head>
+<body style="background-color: #414141; color: aliceblue; ">
+    <h2>Amazing images</h2>
+    <ul id="images">
+        
+        <li><img width="200px" height="200px" id="image1" src="https://images.pexels.com/photos/8247303/pexels-photo-8247303.jpeg" alt=""></li>
+        <li><img width="200px" height="200px" id="image2" src="https://images.pexels.com/photos/38269295/pexels-photo-38269295.jpeg" alt=""></li>
+        <li><img width="200px" height="200px"    id="image3" src="https://images.pexels.com/photos/36303034/pexels-photo-36303034.jpeg" alt=""></li>
+        <li><a style="color: aliceblue;" href="https://google.com" id="link1">Visit Google</a></li>
+    </ul>
+
+</body>
+<!-- 
+// type , timestamp , defaultPrevented 
+// target, toElement, srcElement
+// currentTarget , clientX , clientY , screenX , screenY , pageX , pageY ,altKey , ctrlKey , shiftKey  -->
+
+<script>
+
+    // EventPropagation  
+    
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     alert('You clicke inside the ul element');
+    // }, true);   // capturing phase
+    //  document.getElementById('image1').addEventListener('click', function(e) {
+    //     alert('You clicked on image 1 its bubling up to the ul element');
+    //  }, false); // bubbling phase
+    //  document.getElementById('image2').addEventListener('click', function(e) {
+    //     alert('You clicked on image 2 its capturing down to the ul element');
+    //  }, true); // capturing phase
+    //  document.getElementById('image3').addEventListener('click', function(e) {
+    //     alert('You clicked on image 3 its stopPropagation or stop bubling');
+    //     e.stopPropagation()
+    //  }, false);
+
+    //  document.getElementById('link1').addEventListener('click' , function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     alert('clicked on google')
+
+
+    //  }, false);
+
+     document.querySelector('#images').addEventListener('click' , function(e){
+
+        console.log(e.target);
+        
+
+     });
+
+</script>
+
+</html>
